@@ -1,0 +1,84 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+import networkx as nx
+
+
+# In[2]:
+
+
+import matplotlib.pyplot as plt
+
+
+# In[3]:
+
+
+get_ipython().run_line_magic('matplotlib', 'inline')
+
+
+# In[4]:
+
+
+G = nx.Graph()
+len (G)
+
+
+# In[12]:
+
+
+G.add_node('Adriana')
+#creacion de los nodos
+G.add_nodes_from(['Alejandra Ibarra','Alfredo Zuñiga', 'Nahum','Jesus Quiñones','Alejandro Castellanos',
+                 'Jose Carlos','Jessany Garza','Cielo Pulido','Angelica Moreno','Marianna Guevara',
+                 'Alejandra Salinas','Alondra Lopez','Omar Peña','Juan Geronimo','Paco Huerta','Tris'
+                 ,'Saul Snachez','Alma Alfaro','Vivian de Leon','Luid de Leon','Valeria Raudy','Daniel'
+                 ,'Edagr Ramirez','Yaneth Martinez','Jesus Barbosa','Paola Itzel','Griselda Fuentes',
+                 'Grecia Reta','Luis Puga','Anahi Pesina','Agustin Zavala','Lizeth Andrade','David Gonalez'
+                 ,'Celeste Gonzalez','Montserrat Nieto','Lucero Ramirez','Uriel Hernandez','Dayana Paulin'
+                 ,'Oscar Molina','Dulce Torres','Esmeralda Arjona','Lucio Angel','Roberto Higuera','Hector Martinez'
+                 ,'Dino Tonathiu','Alejandro Gonzalez','Uriel Doria','Estefania De LA Fuente','Juan Carlos Monrreal'
+                 ,'Gabriel Alfaro','Iram Mendez','Anel Baez','Dariana Garibay','Adair Rojas','Joshua Perales'
+                 ,'Jesus Loyola','Axel Morales','Leinany Pineda','Danely Vazquez','Abraham Hernandez'])
+
+
+# In[23]:
+
+
+nx.draw(G, with_labels = True,node_size = 500)
+
+
+# In[51]:
+
+
+G.add_edges_from([('Adriana','Alejandra Ibarra'),('Alejandra Ibarra','Alfredo Zuñiga'), ('Alejandra Ibarra','Nahum')
+                 ,('Adriana','Jesus Quiñones'),('Jesus Quiñones','Alejandro Castellanos'),('Jesus Quiñones','Jose Carlos')
+                 ,('Adriana','Jessany Garza'),('Jessany Garza','Cielo Pulido') ,('Jessany Garza', 'Angelica Moreno'),
+                    ( 'Adriana' ,'Marianna Guevara'),('Marianna Guevara', 'Alejandra Salinas'),('Marianna Guevara', 'Alondra Lopez'),
+                    ( 'Adriana','Omar Peña'),('Omar Peña','Juan Geronimo'),('Omar Peña','Paco Huerta'),
+                    ( 'Adriana','Tris'),('Tris','Saul Snachez'),('Tris','Alma Alfaro'),
+                    ( 'Adriana','Vivian de Leon'),('Vivian de Leon','Luid de Leon'),('Vivian de Leon','Valeria Raudy'),
+                    ( 'Adriana','Daniel'),( 'Daniel', 'Edagr Ramirez'), ('Daniel','Yaneth Martinez'),
+                    ( 'Adriana','Jesus Barbosa'),('Jesus Barbosa','Paola Itzel'),('Jesus Barbosa','Griselda Fuentes'),
+                    ( 'Adriana','Grecia Reta'),('Grecia Reta', 'Luis Puga'),('Grecia Reta','Anahi Pesina'),
+                    ( 'Adriana','Agustin Zavala'),('Agustin Zavala','Lizeth Andrade'),('Agustin Zavala','David Gonalez'),
+                    ( 'Adriana','Celeste Gonzalez'),('Celeste Gonzalez','Montserrat Nieto'),('Celeste Gonzalez', 'Lucero Ramirez'),
+                    ( 'Adriana','Uriel Hernandez'),('Uriel Hernandez','Dayana Paulin'),('Uriel Hernandez','Oscar Molina'),
+                    ( 'Adriana','Dulce Torres'),('Dulce Torres','Esmeralda Arjona'),('Dulce Torres','Lucio Angel'),
+                    ( 'Adriana','Roberto Higuera'),('Roberto Higuera','Hector Martinez'),('Roberto Higuera','Dino Tonathiu'),
+                    ( 'Adriana','Alejandro Gonzalez'),('Alejandro Gonzalez','Uriel Doria'),('Alejandro Gonzalez','Estefania De LA Fuente'),
+                    ( 'Adriana','Juan Carlos Monrreal'),('Juan Carlos Monrreal','Gabriel Alfaro'),('Juan Carlos Monrreal','Iram Mendez'),
+                    ( 'Adriana','Anel Baez'),('Anel Baez','Dariana Garibay'),('Anel Baez','Adair Rojas'),
+                    ( 'Adriana','Joshua Perales'),('Joshua Perales','Jesus Loyola'),('Joshua Perales','Axel Morales'),
+                    ( 'Adriana','Leinany Pineda'),('Leinany Pineda','Danely Vazquez'),('Leinany Pineda','Abraham Hernandez')
+                    ])
+nx.draw(G, node_size = 100)
+
+
+# In[ ]:
+
+
+
+
